@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+}
+
+#app {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.page {
+}
+
+.toolbar {
+  height: 7vh;
+  max-height: 35px;
+  width: 100%;
+  background-color: #479bd4;
+  color: white;
+  position: fixed;
+  top: 0%;
+}

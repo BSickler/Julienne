@@ -1,0 +1,61 @@
+{
+  "name": "Julienne",
+  "author": "SpudLabs",
+  "description": "An inventory management system",
+  "version": "0.2.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "firebase": "^5.9.0",
+    "primeflex": "^1.0.0-rc.1",
+    "primeicons": "^1.0.0",
+    "primereact": "^3.1.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^2.1.8",
+    "react-transition-group": "^2.6.1",
+    "recompose": "^0.30.0",
+    "typescript": "^3.3.3333"
+  },
+  "devDependencies": {
+    "electron": "^4.0.1",
+    "electron-builder": "^20.39.0"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run react-start\" \"wait-on http://localhost:3000/ && npm run electron-start\"",
+    "electron-start": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
+    "react-start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "pack": "build --dir",
+    "dist": "npm run build && build",
+    "postinstall": "install-app-deps"
+  },
+  "homepage": "./",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "main": "public/electron.js",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "build": {
+    "appId": "com.electron.julienne-app",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "icon": "https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-256.png"
+    }
+  }
+}

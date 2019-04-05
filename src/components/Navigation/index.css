@@ -1,0 +1,25 @@
+#Navigation {
+  height: 100vh;
+  width: 35vw;
+  max-width: 175px;
+  background-color: #479bd4;
+  float: left;
+  padding: 35px 0;
+}
+
+#Navigation div a,
+#signOutButton {
+  display: block;
+  padding-left: calc(0.5em + 0.5vw);
+  cursor: pointer;
+  font-size: calc(1em + 1vw);
+  color: white;
+  font-weight: 600;
+  line-height: calc(1.5em + 2vh);
+}
+
+#Navigation div a:hover,
+#signOutButton:hover {
+  background-color: white;
+  color: #479bd4;
+}

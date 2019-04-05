@@ -1,0 +1,7 @@
+#cardDeck {
+  padding-left: 8px;
+}
+
+.card {
+  cursor: pointer;
+}

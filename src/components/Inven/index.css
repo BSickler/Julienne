@@ -1,0 +1,12 @@
+#inventoryPage {
+  margin-top: 35px;
+}
+
+.inventoryList {
+  padding-left: 8px;
+}
+
+.inventoryList a {
+  display: block;
+  color: unset;
+}
